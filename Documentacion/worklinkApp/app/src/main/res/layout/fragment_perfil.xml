@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentos.PerfilFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Perfil"
+            style="@style/text_title" />
+
+        <LinearLayout
+            android:id="@+id/layout_no_logueado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/text_paragraph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inicie sesión o registrese para ver mas" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btn_primary_mid"
+                android:text="Inicia sesión o registrate"
+                android:onClick="loginAction"
+                app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_logueado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:paddingTop="10dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/tv_nombre_usuario"
+                    style="@style/text_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Camilo Diaz"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tv_rol_usuario"
+                    style="@style/text_paragraph"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cliente"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_otro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:text="Perfil"
+                android:textAlignment="textStart"
+                android:textColor="@color/m3_default_color_secondary_text"
+                app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Small" />
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:text="Cerrar sesión"
+                android:textAlignment="textStart"
+                android:textColor="@color/m3_default_color_secondary_text"
+                android:onClick="logoutAction"
+                app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Small" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

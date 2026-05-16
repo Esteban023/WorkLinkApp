@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentos.ExplorarFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="367dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:hint="Buscar Servicios"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="26dp"
+            app:boxCornerRadiusBottomStart="26dp"
+            app:boxCornerRadiusTopEnd="26dp"
+            app:boxCornerRadiusTopStart="26dp"
+            app:boxStrokeColor="@color/brand_primary"
+            app:hintTextColor="@color/brand_primary"
+            app:startIconDrawable="@drawable/ic_search"
+            app:startIconTint="@color/brand_primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Apartado de exploracion de servicios"
+            android:padding="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/texto_decorado"
+                    android:textSize="34dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/texto_description_worklink"
+                    android:textColor="@color/neutral05"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/explorarServicesBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/btn_primary_mid"
+                        android:text="Explorar servicios"
+                        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Medium" />
+
+                    <Button
+                        android:id="@+id/becomeproveebtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/neutral_bg"
+                        android:text="¿Quieres ser Proveedor?"
+                        android:textColor="@color/black"
+                        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="90%"
+                            android:textAlignment="center"
+                            style="@style/text_subtitle" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Satisfacción al cliente"
+                            android:textAlignment="center"
+                            android:textColor="@color/neutral05" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/neutral01" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="95%"
+                            android:textAlignment="center"
+                            style="@style/text_subtitle"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Servicios Completados"
+                            android:layout_marginTop="5dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/neutral05"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/neutral01" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="2K+"
+                            android:textAlignment="center"
+                            style="@style/text_subtitle"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Proveedores Activos"
+                            android:layout_marginTop="5dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/neutral05"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">worklinkApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="texto_decorado"><b>Busca y encuentra <font color="#60b5ff">Servicios</font> en tu ciudad</b></string>
+    <string name="texto_description_worklink">
+        Conéctate con los mejores proveedores independientes de tu ciudad destacados en Educación, Arte &amp; Diseño,
+        y Organización de Eventos y reserva sus servicios en nuestra plataforma de manera flexible y segura.
+    </string>
+</resources>

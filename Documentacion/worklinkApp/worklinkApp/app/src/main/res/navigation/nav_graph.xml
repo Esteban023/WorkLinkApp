@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ExplorarFragment">
+
+    <fragment
+        android:id="@+id/reservasFragment"
+        android:name="co.edu.univalle.worklinkapp.fragmentos.ReservasFragment"
+        android:label="Reservas"/>
+
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="co.edu.univalle.worklinkapp.fragmentos.PerfilFragment"
+        android:label="login"/>
+
+    <fragment
+        android:id="@+id/ExplorarFragment"
+        android:name="co.edu.univalle.worklinkapp.fragmentos.ExplorarFragment"
+        android:label="Explorar"/>
+</navigation>

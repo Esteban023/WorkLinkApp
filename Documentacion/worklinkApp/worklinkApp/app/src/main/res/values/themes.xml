@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WorklinkApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+
+    </style>
+
+    <style name="Theme.WorklinkApp" parent="Base.Theme.WorklinkApp" />
+    <style name="navIndicatorStyle">
+        <item name="android:background">@drawable/nav_indicator</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="text_paragraph">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/neutral05</item>
+    </style>
+    <style name="text_title">
+        <item name="android:textSize">34dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="text_subtitle">
+        <item name="android:textSize">26dp</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentos.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/windowBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            style="@style/text_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="Inicia sesión o registrate"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Correo electronico"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/buttonEnviarLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/btn_primary_mid"
+            android:text="Enviar"
+            />
+
+
+    </LinearLayout>
+
+</FrameLayout>
